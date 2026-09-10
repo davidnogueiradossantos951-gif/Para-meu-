@@ -75,6 +75,107 @@ button:hover {
     transform: scale(1.05);
 }
 
+
+/* =========================
+   NOSSA HISTÓRIA
+========================= */
+
+.historia {
+    min-height: 100vh;
+    padding: 80px 20px;
+    background: #12090d;
+}
+
+.titulo-historia {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.titulo-historia h2 {
+    font-size: 38px;
+    margin-top: 10px;
+}
+
+
+/* Cada foto + texto */
+
+.momento {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 90px;
+    text-align: center;
+}
+
+
+/* TAMANHO DAS FOTOS */
+
+.momento img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    display: block;
+    margin: 0 auto 25px;
+    border-radius: 18px;
+    object-fit: contain;
+}
+
+
+/* Texto abaixo da foto */
+
+.texto-momento {
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.texto-momento h3 {
+    font-size: 25px;
+    font-weight: normal;
+    color: #e8b7c3;
+    margin-bottom: 20px;
+}
+
+.texto-momento p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #eeeeee;
+    margin-bottom: 18px;
+}
+
+.final-amor {
+    font-size: 20px !important;
+    color: #e8b7c3 !important;
+}
+
+.obrigado {
+    font-size: 16px !important;
+    color: #d8b8c0 !important;
+}
+
+
+/* Botão da música */
+
+#botao-musica {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background: rgba(20, 10, 15, 0.85);
+    border: 1px solid #d8899b;
+    color: white;
+    font-size: 20px;
+    z-index: 999;
+}
+
+#botao-musica:hover {
+    transform: scale(1.1);
+}
+
+
+/* Animações */
+
 @keyframes pulsar {
     0%, 100% {
         transform: scale(1);
@@ -97,6 +198,9 @@ button:hover {
     }
 }
 
+
+/* Celular */
+
 @media (max-width: 600px) {
 
     h1 {
@@ -110,30 +214,16 @@ button:hover {
     .frase {
         font-size: 17px;
     }
-}
-#botao-musica {
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    width: 50px;
-    height: 50px;
-    padding: 0;
-    border-radius: 50%;
-    background: rgba(20, 10, 15, 0.85);
-    border: 1px solid #d8899b;
-    color: white;
-    font-size: 20px;
-    z-index: 999;
-}
 
-#botao-musica:hover {
-    transform: scale(1.1);
-}
-.momento img {
-    width: 90%;
-    max-width: 400px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border-radius: 18px;
+    .momento img {
+        max-width: 280px;
+    }
+
+    .texto-momento p {
+        font-size: 16px;
+    }
+
+    .texto-momento h3 {
+        font-size: 22px;
+    }
 }
