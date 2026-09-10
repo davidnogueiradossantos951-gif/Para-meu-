@@ -1,1 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background: #0d0d0d;
+    color: white;
+}
+
+.inicio {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    background:
+        radial-gradient(circle at center, #35151f 0%, #170b10 45%, #080808 100%);
+}
+
+.conteudo-inicio {
+    max-width: 600px;
+    animation: aparecer 1.5s ease;
+}
+
+.coracao {
+    font-size: 55px;
+    margin-bottom: 20px;
+    animation: pulsar 1.8s infinite;
+}
+
+.pequeno {
+    font-size: 15px;
+    color: #d8b8c0;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 58px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: normal;
+    color: #e8b7c3;
+    margin-bottom: 35px;
+}
+
+.frase {
+    font-size: 19px;
+    line-height: 1.8;
+    color: #eeeeee;
+    margin-bottom: 40px;
+}
+
+button {
+    border: 1px solid #d8899b;
+    background: transparent;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #d8899b;
+    transform: scale(1.05);
+}
+
+@keyframes pulsar {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 45px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .frase {
+        font-size: 17px;
+    }
+}
