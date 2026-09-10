@@ -1,3 +1,5 @@
 function entrarNaHistoria() {
-    alert("Nossa história está apenas começando... ❤️");
+    document.getElementById("historia").scrollIntoView({
+        behavior: "smooth"
+    });
 }
